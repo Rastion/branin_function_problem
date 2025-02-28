@@ -1,9 +1,16 @@
 {
     "entry_point": "branin_function_problem:BraninFunctionProblem",
     "default_params": {},
-    "problem_type": "Branin function",
+    "creator": "Rastion",
+    "type": "problem",
+    "problem_name": "Branin function",
     "description": "Optimize the Branin function defined as f(x1, x2) = a*(x2 - b*x1^2 + c*x1 - r)^2 + s*(1-t)*cos(x1) + s with fixed parameters.",
-    "keywords": ["continuous optimization", "branin function", "nonlinear", "parameter tuning", "optimization", "mathematical function"],
+    "keywords": [
+      "branin",
+      "benchmark",
+      "continuous optimization",
+      "mathematical function"
+    ],
     "decision_variables": {
       "x1": {
         "type": "float",
@@ -22,13 +29,8 @@
       "description": "Minimize the value of the Branin function."
     },
     "solution_representation": "A list of two float numbers representing [x1, x2].",
-    "compatible_optimizers": [
-      "gradient_based",
-      "metaheuristic",
-      "particle_swarm",
-      "simulated_annealing",
-      "tabu_search"
-    ],
-    "notes": "The Branin function is a classical benchmark in continuous optimization with multiple local minima."
+    "formulations": [
+      ""
+    ]
   }
   
